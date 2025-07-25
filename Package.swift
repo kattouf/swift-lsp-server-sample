@@ -9,7 +9,7 @@ let package = Package(
         .macOS(.v13),
     ],
     products: [
-        .executable(name: "swift-lsp-server-sample", targets: ["SwiftLSPServer"]),
+        .executable(name: "swift-lsp-server", targets: ["SwiftLSPServer"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.5.0"),
