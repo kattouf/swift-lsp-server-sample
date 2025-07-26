@@ -23,7 +23,7 @@ final class DocumentEventHandler {
 
     func handleTextDocumentDidOpen(_ params: DidOpenTextDocumentParams) async throws {
         guard params.textDocument.isSwift else {
-            logger.debug("Ignoring open non-Package.swift document: \(params.textDocument.uri)")
+            logger.debug("Ignoring open non-swift document: \(params.textDocument.uri)")
             return
         }
         guard openDocuments.keys.contains(params.textDocument.uri) == false else {
